@@ -1,16 +1,17 @@
-package com.hellFire.Order_Service.dto;
+package com.hellFire.Inventory_Service.dto;
 
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderLineItemsDto {
-//    private Long id;
+@Builder
+public class InventoryResponse {
     private String skuCode;
-    private double price;
-    private int quantity;
+    private boolean isInStock;
+
 }
